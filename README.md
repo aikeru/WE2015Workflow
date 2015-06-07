@@ -18,7 +18,7 @@ Install node.js
 https://nodejs.org/download/
 
 How to check?
-Open a new command session and ```run node -v```
+Open a new command session and run ```node -v```
 My version is ```v0.12.0```
 Run ```npm -v```
 My version is ```2.5.1```

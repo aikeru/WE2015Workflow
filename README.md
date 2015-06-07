@@ -17,13 +17,13 @@ If you already use node.js, you can skip step 1. If you already use gulp, you ca
 Install node.js
 https://nodejs.org/download/
 
-How to check?<br />
+**How to check?**<br />
 Open a new command session and run ```node -v```<br />
 My version is ```v0.12.0```<br />
 Run ```npm -v```<br />
 My version is ```2.5.1```<br />
 
-Did something break?<br />
+**Did something break?**<br />
 Check that the folder node is installed in is in your PATH. 64-bit node installs here:<br />
 ```C:\Program Files\nodejs```
 	
@@ -31,11 +31,11 @@ Check that the folder node is installed in is in your PATH. 64-bit node installs
 Install gulp globally.<br />
 ```npm install -g gulp```
 
-How to check?<br />
+**How to check?**<br />
 Open a new command session and run gulp -v<br />
 My version is ```[14:37:25] CLI version 3.9.0```
 
-Did something break?<br />
+**Did something break?**<br />
 Try running ```npm install -g gulp``` with admin credentials (run cmd.exe as admin).<br />
 Gulp and other global packages will be installed into ```C:\Users\<username>\AppData\Roaming\npm\```
 
@@ -61,7 +61,7 @@ This should provide us with gulp itself, which must also be installed locally an
 
 On saving package.json, the node modules should be installed automatically.
 
-Installing the packages manually:
+**Installing the packages manually:**
 You should not need to do this. Open up a command window where the package.json was created from step one.
 Run ```npm install``` in this folder. npm should create a ```node_modules``` folder if it does not already exists. Inside you should find folders for "gulp" and "gulp-watch". 
 
@@ -89,7 +89,7 @@ Right-click on this task and select Bindings > Project Open.
 
 You can force the watch task to end by either closing Visual Studio or by clicking the "x" on the tab where it is running and shows output. For the latter, Visual Studio will confirm if you really want to terminate it.
 
-Did something break?<br />
+**Did something break?**<br />
 Try pressing the refresh button on the Task Runner Explorer.<br />
 If Visual Studio 2015 still does not pick up changes to your gulpfile.js, restart Visual Studio.<br />
 Try running the watch task directly from the Task Runner Explorer. An output window should display any errors in trying to run your gulp task.<br />

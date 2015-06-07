@@ -17,35 +17,35 @@ If you already use node.js, you can skip step 1. If you already use gulp, you ca
 Install node.js
 https://nodejs.org/download/
 
-How to check?
-Open a new command session and run ```node -v```
-My version is ```v0.12.0```
-Run ```npm -v```
-My version is ```2.5.1```
+How to check?<br />
+Open a new command session and run ```node -v```<br />
+My version is ```v0.12.0```<br />
+Run ```npm -v```<br />
+My version is ```2.5.1```<br />
 
-Did something break?
-Check that the folder node is installed in is in your PATH. 64-bit node installs here:
+Did something break?<br />
+Check that the folder node is installed in is in your PATH. 64-bit node installs here:<br />
 ```C:\Program Files\nodejs```
 	
 #### Step 2:
-Install gulp globally.
+Install gulp globally.<br />
 ```npm install -g gulp```
 
-How to check?
-Open a new command session and run gulp -v
+How to check?<br />
+Open a new command session and run gulp -v<br />
 My version is ```[14:37:25] CLI version 3.9.0```
 
-Did something break?
-Try running ```npm install -g gulp``` with admin credentials (run cmd.exe as admin).
+Did something break?<br />
+Try running ```npm install -g gulp``` with admin credentials (run cmd.exe as admin).<br />
 Gulp and other global packages will be installed into ```C:\Users\<username>\AppData\Roaming\npm\```
 
 ### Project-Specific Setup
-If you have installed node, npm and gulp globally, you may proceed.
+If you have installed node, npm and gulp globally, you may proceed.<br />
 Let's get a fresh gulp-watch setup so we can add other features to it.
 
 #### Step 1: Create a package.json in the root of the web project
-This file should be alongside folders like "Scripts", "Content" and "Global.cs".
-In the file below we give some metadata about our project (which we'll ignore) and a "devDependencies" section that tells the node package manager (npm) which packages we need while developing and building our application.
+This file should be alongside folders like "Scripts", "Content" and "Global.cs".<br />
+In the file below we give some metadata about our project (which we'll ignore) and a "devDependencies" section that tells the node package manager (npm) which packages we need while developing and building our application.<br />
 As you create this file, Visual Studio 2015 should give you intellisense for it and suggest version arguments.
 ```json
 {
@@ -81,23 +81,23 @@ gulp.task('watch', function () {
 });
 ```
 
-After creating this file, let's open the Task Runner Explorer.
-You should find it in View > Other Windows > Task Runner Explorer.
-Press the circular arrow button (the refresh button) to refresh any changes to your gulpfile if needed.
-You should see one task ```watch``` under Gulpfile.js > Tasks > watch.
+After creating this file, let's open the Task Runner Explorer.<br />
+You should find it in View > Other Windows > Task Runner Explorer.<br />
+Press the circular arrow button (the refresh button) to refresh any changes to your gulpfile if needed.<br />
+You should see one task ```watch``` under Gulpfile.js > Tasks > watch.<br />
 Right-click on this task and select Bindings > Project Open.
 
 You can force the watch task to end by either closing Visual Studio or by clicking the "x" on the tab where it is running and shows output. For the latter, Visual Studio will confirm if you really want to terminate it.
 
-Did something break?
-Try pressing the refresh button on the Task Runner Explorer.
-If Visual Studio 2015 still does not pick up changes to your gulpfile.js, restart Visual Studio.
-Try running the watch task directly from the Task Runner Explorer. An output window should display any errors in trying to run your gulp task.
+Did something break?<br />
+Try pressing the refresh button on the Task Runner Explorer.<br />
+If Visual Studio 2015 still does not pick up changes to your gulpfile.js, restart Visual Studio.<br />
+Try running the watch task directly from the Task Runner Explorer. An output window should display any errors in trying to run your gulp task.<br />
 When you bind your task to "project open", you should see this line added to your gulpfile.js:
 ```/// <binding ProjectOpened='watch' />```
 
 ### Transpiling LESS on Save
-Whenever we save a .LESS file, we want to automatically transpile it to .CSS.
+Whenever we save a .LESS file, we want to automatically transpile it to .CSS.<br />
 To do this we'll use the ```gulp-less``` plugin found here: https://www.npmjs.com/package/gulp-less
 
 Let's open the package.json we created and change it to this:

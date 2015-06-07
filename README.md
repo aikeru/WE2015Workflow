@@ -93,7 +93,7 @@ You can force the watch task to end by either closing Visual Studio or by clicki
 Try pressing the refresh button on the Task Runner Explorer.<br />
 If Visual Studio 2015 still does not pick up changes to your gulpfile.js, restart Visual Studio.<br />
 Try running the watch task directly from the Task Runner Explorer. An output window should display any errors in trying to run your gulp task.<br />
-When you bind your task to "project open", you should see this line added to your gulpfile.js:
+When you bind your task to "project open", you should see this line added to your gulpfile.js:<br />
 ```/// <binding ProjectOpened='watch' />```
 
 ### Transpiling LESS on Save

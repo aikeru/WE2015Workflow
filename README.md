@@ -16,6 +16,7 @@ If you already use node.js, you can skip step 1. If you already use gulp, you ca
 #### Step 1:
 Install node.js
 https://nodejs.org/download/
+
 How to check?
 Open a new command session and ```run node -v```
 My version is ```v0.12.0```

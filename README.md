@@ -7,9 +7,10 @@ Here are the features Web Essentials 2014 provides that we may want:
 * Minify JavaScript, CSS on save
 * Transpile LESS, CoffeeScript, TypeScript on save
 
-We're going to take an existing ASP.NET MVC project and add these features to it.
+We're going to take an existing ASP.NET MVC project and add these features to it. 
 
 ### One-time Setup
+------------------
 In the past Web Essentials used its own copy of node.js.
 If you already use node.js, you can skip step 1. If you already use gulp, you can skip step 2.
 
@@ -40,6 +41,7 @@ Try running ```npm install -g gulp``` with admin credentials (run cmd.exe as adm
 Gulp and other global packages will be installed into ```C:\Users\<username>\AppData\Roaming\npm\```
 
 ### Project-Specific Setup
+--------------------------
 If you have installed node, npm and gulp globally, you may proceed.<br />
 Let's get a fresh gulp-watch setup so we can add other features to it.
 
@@ -97,6 +99,7 @@ When you bind your task to "project open", you should see this line added to you
 ```/// <binding ProjectOpened='watch' />```
 
 ### Transpiling LESS on Save
+----------------------------
 Whenever we save a .LESS file, we want to automatically transpile it to .CSS.<br />
 To do this we'll use the ```gulp-less``` plugin found here: https://www.npmjs.com/package/gulp-less
 

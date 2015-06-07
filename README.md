@@ -53,7 +53,7 @@ As you create this file, Visual Studio 2015 should give you intellisense for it 
   "name": "MyApplication",
   "devDependencies": { 
     "gulp":  "^3.8.10",
-    "gulp-watch": "gulp-watch": "^4.2.4"
+    "gulp-watch": "^4.2.4"
   }
 }
 ```

@@ -136,7 +136,7 @@ gulp.task('watch', function () {
 gulp.task('less', function () {
   return gulp.src(lessSourceFiles)
   .pipe(less())
-  .pipe(gulp.dest('Content'));
+  .pipe(gulp.dest(lessOutput));
 });
 ```
 
